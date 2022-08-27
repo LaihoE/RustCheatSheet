@@ -14,3 +14,12 @@ List files in dir
 ```rust
 let paths = fs::read_dir("./").unwrap();
 ```
+Measure time
+```rust
+use std::time::Instant;
+
+let now = Instant::now();
+
+let elapsed = now.elapsed();
+println!("Elapsed: {:.2?}", elapsed);
+```
